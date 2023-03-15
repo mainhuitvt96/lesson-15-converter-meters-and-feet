@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi đơn vị đo độ dài</title>
+</head>
+<body>
+    <script>
+        function feetToMeter(feet) {
+            let meter= 0.305*feet;
+            return meter;
+        }
+        function meterToFeet(meter) {
+            let feet = 3.279 * meter;
+            return feet;
+        }
+        let inputFeet = parseFloat(prompt("Vui lòng nhập vào số feet muốn chuyển đổi sang meter: "));
+        let inpuMeter = parseFloat(prompt("Vui lòng nhập vào số Meter muốn chuyển đổi sang Feet: "));
+
+        document.write(`Giá trị của ${inputFeet} feet sang meter là: ${feetToMeter(inputFeet)} meter <br>`);
+        document.write(`Giá trị của ${inpuMeter} meter sang feet là: ${feetToMeter(inpuMeter)} feet`);
+
+    </script>
+</body>
+</html>
